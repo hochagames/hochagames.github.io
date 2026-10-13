@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HOCHA Games - Official Studio Site</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Noto+Sans+KR:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+    <!-- Particle Background Canvas -->
+    <canvas id="bg-canvas"></canvas>
+
+    <!-- Header Navigation -->
+    <header>
+        <div class="nav-container">
+            <a href="index.html" class="brand-logo">
+                <i class="fa-solid fa-gamepad"></i>
+                <span>HOCHA</span> GAMES
+            </a>
+            <div class="nav-right">
+                <ul class="nav-links">
+                    <li><a href="index.html" data-i18n="nav-home">홈</a></li>
+                    <li><a href="index.html#about" data-i18n="nav-about">스튜디오 소개</a></li>
+                    <li><a href="privacy.html" data-i18n="nav-privacy">개인정보 처리 방침</a></li>
+                    <li><a href="#contact" data-i18n="nav-contact">연락처</a></li>
+                </ul>
+                <!-- Language Switcher Button -->
+                <div class="lang-switcher" onclick="toggleLanguage()">
+                    <span class="lang-btn active" id="btn-ko">KO</span>
+                    <span class="lang-btn" id="btn-en">EN</span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <div class="badge" data-i18n="hero-badge">Next Generation Game Studio</div>
+            <h1 data-i18n="hero-title">상상을 뛰어넘는<br>새로운 플레이 경험</h1>
+            <p data-i18n="hero-desc">HOCHA Games는 독창적인 세계관과 몰입감 넘치는 가상 경험을 만들어가는 독립 게임 개발 스튜디오입니다.</p>
+            <a href="#about" class="hero-btn">
+                <span data-i18n="hero-btn">스튜디오 알아보기</span> <i class="fa-solid fa-arrow-down"></i>
+            </a>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about-section">
+        <div class="section-header">
+            <h2>ABOUT HOCHA GAMES</h2>
+            <p data-i18n="about-subtitle">우리가 게임을 만들어가는 핵심 가치입니다</p>
+        </div>
+        <div class="about-grid">
+            <div class="about-card">
+                <i class="fa-solid fa-lightbulb about-icon"></i>
+                <h3 data-i18n="card1-title">독창적인 아이디어</h3>
+                <p data-i18n="card1-desc">정형화된 틀에서 벗어나 새로움과 신선한 재미를 선사하는 독창적인 메카닉과 세계관을 탐구합니다.</p>
+            </div>
+            <div class="about-card">
+                <i class="fa-solid fa-heart about-icon"></i>
+                <h3 data-i18n="card2-title">플레이어 중심</h3>
+                <p data-i18n="card2-desc">유저들의 피드백을 소중히 여깁니다. 지속적인 소통을 통해 더욱 완벽하고 즐거운 플레이 환경을 조성합니다.</p>
+            </div>
+            <div class="about-card">
+                <i class="fa-solid fa-gamepad about-icon"></i>
+                <h3 data-i18n="card3-title">몰입의 즐거움</h3>
+                <p data-i18n="card3-desc">단순한 플레이를 넘어 유저가 스토리에 완전히 몰입하고 깊은 감동을 느낄 수 있는 작품 개발을 목표로 합니다.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer & Contact Section -->
+    <footer id="contact">
+        <div class="footer-container">
+            <div class="footer-info">
+                <h3>HOCHA GAMES</h3>
+                <p data-i18n="footer-desc">게임에 대한 열정과 끊임없는 도전으로 최고의 재미를 선보이겠습니다.</p>
+                <ul class="contact-details">
+                    <li><i class="fa-solid fa-envelope"></i> hochagames@gmail.com</li>
+                </ul>
+            </div>
+            <div>
+                <div class="footer-links-title" data-i18n="footer-nav-title">안내 & 정책</div>
+                <ul class="footer-nav">
+                    <li><a href="index.html#about" data-i18n="nav-about">스튜디오 소개</a></li>
+                    <li><a href="privacy.html" data-i18n="nav-privacy">개인정보 처리 방침</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div>&copy; 2026 HOCHA Games. All rights reserved.</div>
+            <div>Designed for Next-Gen Gaming Experience</div>
+        </div>
+    </footer>
+
+    <!-- Main JavaScript Import -->
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
